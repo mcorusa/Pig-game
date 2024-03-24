@@ -2,6 +2,7 @@
 
 let players = document.querySelectorAll('.player');
 
+
 let overallScoreEl1 = document.getElementById('score--0');
 let overallScoreEl2 = document.getElementById('score--1');
 
@@ -48,7 +49,7 @@ btnRollDiceEl.addEventListener('click', () => {
 
     // 2. Display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `images/dice-${dice}.png`;
 
     // 3. Checked for rolled 1 ? switch to next player : add random number to current score
     if (dice !== 1) {
